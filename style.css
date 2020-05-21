@@ -1,0 +1,87 @@
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+
+body {
+    background-color: #1F2833;
+}
+
+h1 {
+    color: #66FCF1;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+p {
+    color: #C5C6C7;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+span {
+    color: #66FCF1;
+}
+
+/* Animation Loop */
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation 1.5s infinite;
+     -moz-animation: flickerAnimation 1.5s infinite;
+     -o-animation: flickerAnimation 1.5s infinite;
+      animation: flickerAnimation 1.5s infinite;
+ }
+
+ /* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+   ::-webkit-scrollbar-track {
+     background: #1F2833;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #66FCF1;
+    border-radius: 100px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1F2833;
+  }
+
+/* Animation */
+.rotate {
+    animation: rotation 20s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
